@@ -2,6 +2,7 @@ import React from 'react'
 import './main.scss'
 import Card from './card'
 import Dresses from '../../assets/dresses.jpg'
+import CardData from './card-data'
 
 
 
@@ -21,19 +22,21 @@ const Main = () => {
         <ul>
           <li><a href="">New</a></li>
           <li><a href="">Sale</a></li>
-          <li><a href="">Women</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href="">Kids</a></li>
         </ul>
       </div>
 
       <div className="items">
-        <Card 
-          card_image="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          card_name="Fashion Nova"
-          card_description="Lauren and the Blue Dress"
-          card_price="$100.00"
-          />
+        { CardData.map((val, ind) => {
+            return (
+              <Card 
+                key={ind}
+                picture={val.picture}
+                name={val.name}
+                description={val.description}
+                price={val.price}/>
+            )
+          })
+        }
       </div>
 
       <hr />

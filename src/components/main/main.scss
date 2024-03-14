@@ -50,21 +50,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0.5rem;
-  background: rgba(240, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.card {
-  border: 1px solid #dadada;
-  border-radius: 5%;
-  height: auto;
-  width: 200px;
-  flex-basis: calc(20% - 2rem);
-  margin: 0.2rem;
-  padding: 0.5rem;
-
-  .card-img {
-    border-radius: 5%;
-    height: 150px;
-    width: auto;
-  }
-}

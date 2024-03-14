@@ -1,13 +1,18 @@
 import React from "react";
-import Add from "../../assets/add-image.png";
+import "./card.scss";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
-      <img src={Add} alt="" srcset="" className="card-img" />
-      <h4>Item Name</h4>
-      <p>Item Description</p>
-      <h4>$ 100.00</h4>
+      <div className="card-image">
+        <img src={props.card_image} alt="" srcset="" className="card-img" />
+      </div>
+      
+      <div className="card-text">
+        <h4>{props.card_name}</h4>
+        <p>{props.card_description}</p>
+        <h4>{props.card_price}</h4>
+      </div>
     </div>
   );
 };

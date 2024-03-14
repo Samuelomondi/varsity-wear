@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
         <FontAwesomeIcon icon={faHome} className='home-icon'/>
-        <h3>My React App</h3>
+        <h3>Welcome</h3>
         <FontAwesomeIcon icon={faCartPlus} className='cart-icon'/>
     </header>
   )

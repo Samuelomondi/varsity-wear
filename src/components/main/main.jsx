@@ -2,7 +2,7 @@ import React from 'react'
 import './main.scss'
 import Card from './card'
 import Dresses from '../../assets/dresses.jpg'
-import Header from '../header/header'
+
 
 
 const Main = () => {
@@ -28,16 +28,12 @@ const Main = () => {
       </div>
 
       <div className="items">
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card 
+          card_image="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          card_name="Fashion Nova"
+          card_description="Lauren and the Blue Dress"
+          card_price="$100.00"
+          />
       </div>
 
       <hr />

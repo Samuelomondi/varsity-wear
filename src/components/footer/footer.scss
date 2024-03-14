@@ -1,0 +1,17 @@
+.footer {
+    padding: 1rem;
+
+    .link-icons {
+        margin: 10px;
+        
+        a {
+            padding: 10px;
+            color: rgb(94, 94, 94);
+            font-size: 20px;
+        }
+        a:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+}

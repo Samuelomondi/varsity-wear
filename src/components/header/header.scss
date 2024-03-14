@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .home-icon, .cart-icon {
+    font-size: 20px;
+  }
+
+  .home-icon:hover, .cart-icon:hover {
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+  }
+
+}
